@@ -8,11 +8,11 @@ function App() {
   function updateEquation(e) {
     setEquation({
       ...equation,
-      [e.target.id] : [e.target.value]
+      [e.target.id] : e.target.value
     })
   }
 
-  function doOperation(e){
+  function doOperation(){
     switch(equation.operation){
       case "add":
         // do add
